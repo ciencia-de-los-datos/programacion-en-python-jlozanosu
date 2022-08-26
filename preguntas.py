@@ -18,7 +18,7 @@ def pregunta_01():
     Retorne la suma de la segunda columna.
 
     Rta/
-   333
+   256
 
     """
     return
