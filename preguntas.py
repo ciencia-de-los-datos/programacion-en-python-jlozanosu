@@ -23,12 +23,12 @@ def lectura_archivo():
         datos_1 = file.readlines()
     
 
-    #limpieza
+    # Orden de datos
     datos_1 = [line.replace("\n", "") for line in datos_1]
 
-    #
-    # Conversión de los strings a listas
-    #
+    
+    # de strings a listas
+    
     datos_1 = [line.split("\t") for line in datos_1]
     
 
@@ -457,11 +457,10 @@ def pregunta_12():
 
     datos=[[x[0], x[4].split(',')]  for x in datos]
     datos=[(x[0],int(y.split(':')[1])) for x in datos for y in x[1]]
-    #se crea la duplas (letra, valor)
+    #se crean las duplas (letra, valor)
     #datos=[(y, int(x[0])) for x in datos for y in x[1] ]
     #datos=sorted(datos)
-    #Se cuenta cada registro
-    #Esto se usa tanto que es mejor una funcion
+  
     datos=sorted(datos)
     resultado={}
     for i in datos:
